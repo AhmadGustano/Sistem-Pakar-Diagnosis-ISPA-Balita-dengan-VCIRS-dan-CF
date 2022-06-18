@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+<!--    tools:context=".DiagnosisPageAdmin">-->
+    <TextView
+        android:id="@+id/txt_JdlInputPatientPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_jdlInputPatientPage"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:id="@+id/txt_JdlNamaPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_nama_pasien"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/edt_NamaPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:autofillHints="@string/input_txt_nama_pasien"
+        android:hint="@string/input_txt_nama_pasien"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txt_UsiaPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_usia_pasien"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:id="@+id/edt_UsiaPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="@string/input_txt_usia_pasien"
+        android:autofillHints="@string/input_txt_usia_pasien"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txt_JkPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_jk_pasien"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <RadioGroup
+        android:id="@+id/RadioGroupJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/jk_laki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jk_laki_laki"
+        android:textSize="20sp" />
+    <RadioButton
+        android:id="@+id/jk_perempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jk_perempuan"
+        android:textSize="20sp"
+        />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_TinggiPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_tinggi_badan_pasien"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:id="@+id/edt_TinggiPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="@string/input_txt_tinggi_pasien_cm"
+        android:autofillHints="@string/input_txt_tinggi_pasien_cm"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txt_BeratPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_berat_badan_pasien"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:id="@+id/edt_BeratPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="@string/input_txt_berat_pasien_kg"
+        android:autofillHints="input_txt_berat_pasien_kg"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/btn_txt_next"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

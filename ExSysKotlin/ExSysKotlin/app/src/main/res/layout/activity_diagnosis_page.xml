@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    >
+    <TextView
+        android:id="@+id/txt_jdlDiganosisPatientPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/txt_jdlDiagnosisPage"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+<androidx.cardview.widget.CardView
+    android:id="@+id/CardViewDiagnosis"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/txt_jdlDiganosisPatientPage"
+    app:layout_constraintLeft_toLeftOf="parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_JdlNamaPasien2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf=""
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="Nama Pasien"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlUsiaPasien2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_JdlNamaPasien2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="Usia Pasien"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlJkPasien2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_JdlUsiaPasien2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="Jenis Kelamin Pasien"
+                android:textSize="30sp"
+                />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/ScrollViewDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewDiagnosis">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/name_cons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--//question1-->
+            <TextView
+                android:id="@+id/text_question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_1"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_1">
+
+                <RadioButton
+                    android:id="@+id/question_1_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_1_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question2-->
+            <TextView
+                android:id="@+id/text_question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_2"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup1" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_2">
+
+                <RadioButton
+                    android:id="@+id/question_2_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_2_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question3-->
+            <TextView
+                android:id="@+id/text_question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_3"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup2" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_3">
+
+                <RadioButton
+                    android:id="@+id/question_3_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_3_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question4-->
+            <TextView
+                android:id="@+id/text_question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_4"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup3" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_4">
+
+                <RadioButton
+                    android:id="@+id/question_4_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_4_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question5-->
+            <TextView
+                android:id="@+id/text_question_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_5"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup4" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_5">
+
+                <RadioButton
+                    android:id="@+id/question_5_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_5_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question6-->
+            <TextView
+                android:id="@+id/text_question_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_6"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup5" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_6">
+
+                <RadioButton
+                    android:id="@+id/question_6_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_6_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question7-->
+            <TextView
+                android:id="@+id/text_question_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_7"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup6" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_7">
+
+                <RadioButton
+                    android:id="@+id/question_7_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_7_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question8-->
+            <TextView
+                android:id="@+id/text_question_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_8"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup7" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_8">
+
+                <RadioButton
+                    android:id="@+id/question_8_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_8_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question9-->
+            <TextView
+                android:id="@+id/text_question_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_9"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup8" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_9">
+
+                <RadioButton
+                    android:id="@+id/question_9_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_9_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question10-->
+            <TextView
+                android:id="@+id/text_question_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_10"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup9" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_10">
+
+                <RadioButton
+                    android:id="@+id/question_10_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_10_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question10 pneumonia-->
+            <TextView
+                android:id="@+id/text_question_10_pneumonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_10_pneumonia"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup10" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup10pneumonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_10_pneumonia">
+
+                <RadioButton
+                    android:id="@+id/question_10_yes_pneumonia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_10_no_pneumonia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <!--question11-->
+            <TextView
+                android:id="@+id/text_question_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/question_11"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RadioGroup10pneumonia" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_question_11">
+
+                <RadioButton
+                    android:id="@+id/question_11_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/question_11_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_no"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btn_txt_diagnosis"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ScrollViewDiagnosis" />
+</androidx.constraintlayout.widget.ConstraintLayout>

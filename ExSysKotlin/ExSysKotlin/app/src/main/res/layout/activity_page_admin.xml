@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/icon_diagnosis"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/img_mulai_diagnosis"
+        android:src="@drawable/baseline_coronavirus_black_18dp" />
+
+    <TextView
+        android:id="@+id/text_icon_diagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/img_txt_mulai_diagnosis"
+        android:textSize="40sp"
+        />
+    <ImageView
+        android:id="@+id/icon_update_rule"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_rule_black_18dp"
+        android:contentDescription="@string/img_update_rule"
+        />
+    <TextView
+        android:id="@+id/text_icon_update_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/img_txt_update_rule"
+        android:textSize="40sp"
+        />
+    <ImageView
+        android:id="@+id/icon_export_data"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_get_app_black_18dp"
+        android:contentDescription="@string/img_update_rule"
+        />
+    <TextView
+        android:id="@+id/text_export_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/img_txt_export_data"
+        android:textSize="40sp"
+        />
+
+</LinearLayout>
