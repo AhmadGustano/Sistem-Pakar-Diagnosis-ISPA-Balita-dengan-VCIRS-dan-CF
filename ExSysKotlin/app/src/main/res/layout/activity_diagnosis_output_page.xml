@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagnosisOutputPage"
+    android:background="@drawable/main_bg"
+    >
+
+        <TextView
+        android:id="@+id/txt_jdlOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/txt_hasil_diagnosis"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+            android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewOutputDiagnosis2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_jdlOutput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="35dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        tools:ignore="MissingConstraints"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_JdlNamaPasien3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txt_jdlOutput"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            tools:text="Nama Pasien"
+                            android:textSize="30sp"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:id="@+id/txt_JdlUsiaPasien3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txt_JdlNamaPasien3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            tools:text="Usia Pasien"
+                            android:textSize="30sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_JdlJkPasien3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txt_JdlUsiaPasien3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            tools:text="Jenis Kelamin Pasien"
+                            android:textSize="30sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_OutputDiagnosis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txt_JdlJkPasien3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            tools:text="Output Diagnosis"
+                            android:textSize="30sp"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:id="@+id/txt_OutputVCIRS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txt_OutputDiagnosis"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            tools:text="Output VCIRS"
+                            android:textSize="30sp"
+                            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<!--    <TextView-->
+<!--        android:id="@+id/txt_jdlOutput2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/CardViewOutputDiagnosis2"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:text="qdqS"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:gravity="center_horizontal"/>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/CardViewOutputDiagnosis3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/CardViewOutputDiagnosis2"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/btnBackMenu"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        >-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_OutputTindakan"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/CardViewOutputDiagnosis2"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                tools:text="TINDAKAN YANG DIANJURKAN"-->
+<!--                android:textSize="20sp"-->
+<!--                tools:ignore="NotSibling" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <Button
+        android:id="@+id/btnBackMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_kembali_menu_utama"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CardViewOutputDiagnosis2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

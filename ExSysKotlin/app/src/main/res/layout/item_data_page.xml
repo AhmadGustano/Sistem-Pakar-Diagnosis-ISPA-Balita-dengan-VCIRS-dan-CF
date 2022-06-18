@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_JdlDataIdPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_id_data_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataNamaPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/input_nama_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataIdPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataUsiaPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_usia_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataNamaPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataJKPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_jk_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataUsiaPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataTinggiPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_tinggi_badan_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataJKPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataBeratPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_berat_badan_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataTinggiPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataHasilPerhitunganPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_hasil_perhitungan_pasien"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataBeratPasien"
+                />
+
+            <TextView
+                android:id="@+id/txt_JdlDataHasilDiagnosisPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_hasil_diagnosis"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_JdlDataHasilPerhitunganPasien"
+                />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

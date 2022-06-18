@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">ExSys</string>
+
+    <string name="question_1">Apakah anak tidak dapat minum atau menyusui?</string>
+    <string name="question_2">Apakah anak cenderung selalu memuntahkan semuanya?</string>
+    <string name="question_3">Apakah anak menderita kejang?</string>
+    <string name="question_4">Apakah anak tampak letargis atau tidak sadar?</string>
+    <string name="question_5">Apakah anak mengalami batuk-batuk?</string>
+    <string name="question_6">Apakah anak mengonsumsi yang mengandung minyak atau pengawet maupun cepat saji?</string>
+    <string name="question_7">Apakah anak mengalami pilek?</string>
+    <string name="question_8">Apakah anak mengalami kesulitan bernapas?</string>
+    <string name="question_9">Apakah anak banyak menghirup asap?</string>
+    <string name="question_10">Apakah anak merasa demam, mengalami suhu tinggi, atau suhu tubuh tidak stabil?</string>
+    <string name="question_10_pneumonia">Apakah usia anak &lt; 2 bulan dengan Respiration Rate 60/menit atau 2 bulan sampai &lt;
+        12 bulan dengan Respiration
+        Rate 50/menit atau 12 bulan sampai &lt;
+        5tahun dengan Respiration Rate 40/menit?</string>
+    <string name="question_11">Apakah suhu tubuh anak 37,5 derajat celcius keatas?</string>
+
+    <string name="radio_button_yes">Ya</string>
+    <string name="radio_button_no">Tidak</string>
+
+    <string name="login_page">Halaman Login</string>
+    <string name="hint_enter_username">Masukkan Username</string>
+    <string name="hint_enter_password">Masukkan Password</string>
+    <string name="btn_login">Login</string>
+
+    <string name="img_mulai_diagnosis">Mulai diagnosis</string>
+    <string name="img_txt_mulai_diagnosis">Mulai Diagnosis</string>
+    <string name="img_lihat_data">Lihat Data</string>
+    <string name="img_txt_lihat_data">Lihat Data</string>
+    <string name="img_txt_export_data">Export Data Excel</string>
+
+    <string name="txt_jdlInputPatientPage">FORM INPUT DATA PASIEN</string>
+    <string name="input_nama_pasien">Nama Pasien</string>
+    <string name="input_txt_nama_pasien">masukkan nama pasien</string>
+    <string name="input_usia_pasien">Usia Pasien</string>
+    <string name="input_txt_usia_pasien">masukkan usia pasien</string>
+    <string name="input_jk_pasien">Jenis Kelamin Pasien</string>
+    <string name="jk_laki_laki">Laki-Laki</string>
+    <string name="jk_perempuan">Perempuan</string>
+    <string name="input_tinggi_badan_pasien">Tinggi Badan Pasien</string>
+    <string name="input_txt_tinggi_pasien_cm">ex : 100</string>
+    <string name="input_berat_badan_pasien">Berat Badan Pasien</string>
+    <string name="input_txt_berat_pasien_kg">ex : 20</string>
+    <string name="btn_txt_next">Next</string>
+
+    <string name="txt_jdlDiagnosisPage">SESI TANYA JAWAB PASIEN</string>
+    <string name="btn_txt_diagnosis">Mulai Diagnosis</string>
+    <string name="txt_hasil_diagnosis">HALAMAN HASIL DIAGNOSIS</string>
+<!--    <string name="txt_hasil_diagnosis2">TINDAKAN YANG DIANJURKAN</string>-->
+    <string name="txt_kembali_menu_utama">KEMBALI KE MENU UTAMA</string>
+
+    <string name="btnLogout">LOGOUT</string>
+    <string name="txt_export_data">EXPORT DATA FORMAT EXCEL</string>
+    <string name="satuan_tinggi_badan_pasien">cm</string>
+    <string name="satuan_berat_badan_pasien">kg</string>
+    <string name="txt_JdlDataPage">DATA HASIL DIAGNOSIS PASIEN</string>
+    <string name="txt_id_data_pasien">ID Pasien</string>
+    <string name="input_hasil_perhitungan_pasien">Hasil Perhitungan Diagnosis</string>
+    <string name="txt_hasil_diagnosis2">Hasil Diagnosis</string>
+
+</resources>
